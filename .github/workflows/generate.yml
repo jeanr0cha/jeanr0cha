@@ -6,24 +6,31 @@ on:
     - cron: "0 */12 * * *"
   workflow_dispatch:
 
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
 jobs:
   build:
     name: Jobs to update datas
     runs-on: ubuntu-latest
-    permissions:
-      contents: write # Permissão para a Action escrever no repositório
+
     steps:
-      - uses: Platane/snk@v3
-        id: snake-gif
+      - name: Checkout do repositório
+        uses: actions/checkout@v3
+
+      - name: Gerar SVG da cobrinha
+        uses: Platane/snk@v3
         with:
           github_user_name: jeanr0cha
-          # Gera o arquivo .svg na raiz do diretório de trabalho
           svg_out_path: github-contribution-grid-snake.svg
 
-      - uses: crazy-max/ghaction-github-pages@v3
+      - name: Publicar na branch output
+        uses: crazy-max/ghaction-github-pages@v3
         with:
           target_branch: output
-          # O diretório que contém o arquivo a ser enviado é a raiz (.)
           build_dir: .
+          keep_history: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
