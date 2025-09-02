@@ -26,4 +26,3 @@
 
 ##
 
-![Snake animation](https://raw.githubusercontent.com/jeanr0cha/jeanr0cha/output/github-contribution-grid-snake.svg)
