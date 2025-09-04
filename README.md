@@ -9,10 +9,10 @@ Estudante de Engenharia de Computação, e atualmente estou como estagiário de 
 ##
 <div align="center">
   <img height="180cm" src="https://github-readme-stats.vercel.app/api?username=jeanr0cha&show_icons=true&hide=contribs,prs&cache_seconds=86400&theme=gotham"/>
-  <img height="180cm" src="https://github-readme-stats.vercel.app/api/top-langs/?username=jeanr0cha&layout=compact&&theme=gotham"/> 
+  <img height="180cm" src="https://github-readme-stats.vercel.app/api/top-langs/?username=jeanr0cha&langs_count=10&layout=compact&&theme=gotham"/> 
 </div>
-
 ##
+
 ## Backend
 <div align="center">
   <img alt="Python" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg">
@@ -21,7 +21,6 @@ Estudante de Engenharia de Computação, e atualmente estou como estagiário de 
        
 </div>
 
-##
 ## Frontend
 <div align="center">
   <img alt="Js" height="30" width="40" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg">
