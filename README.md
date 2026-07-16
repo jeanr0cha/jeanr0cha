@@ -1,15 +1,8 @@
-# Me chamo Jean
-
 ## Desenvolvedor .NET | C# • ASP.NET Core • Azure
 
 Atuo no desenvolvimento backend com **.NET**, **C#** e **APIs REST**. Atualmente trabalho no **Grupo Gmill** e sou formado em Engenharia de Computação.
 
 Estou sempre aprendendo e aperfeiçoando minhas habilidades em soluções bem estruturadas, utilizando boas práticas de arquitetura, bancos de dados e serviços em nuvem.
-
-<div align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=jeanr0cha&show_icons=true&hide=contribs,prs&cache_seconds=86400&theme=gotham" alt="Estatísticas do GitHub de Jean"/>
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=jeanr0cha&langs_count=10&layout=compact&theme=gotham" alt="Linguagens mais usadas por Jean"/>
-</div>
 
 ## Backend
 
@@ -25,7 +18,7 @@ Desenvolvimento de APIs REST e aplicações backend com .NET, C#, ASP.NET Core e
 
 ## Banco de dados
 
-Utilização de PostgreSQL e SQL Server para persistência e consulta de dados.
+PostgreSQL e SQL Server.
 
 <div align="center">
   <img alt="PostgreSQL" height="40" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg"/>
@@ -47,7 +40,7 @@ Experiência com Azure, acompanhamento de pods em Kubernetes (K8s), Git, CQRS e 
 
 ## Frontend
 
-Conhecimentos em JavaScript, HTML e CSS para construção e integração de interfaces.
+Conhecimentos básicos em JavaScript, HTML e CSS para construção e integração de interfaces.
 
 <div align="center">
   <img alt="JavaScript" height="40" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"/>
