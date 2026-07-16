@@ -1,8 +1,9 @@
+```md
 # Me chamo Jean
 
 ## Desenvolvedor .NET | C# • ASP.NET Core • Azure
 
-Atuo com desenvolvimento backend, em **.NET**, **C#** e **APIs REST**. Atualmente trabalho no **Grupo Gmill** e sou formado em Engenharia de Computação.
+Atuo no desenvolvimento backend com **.NET**, **C#** e **APIs REST**. Atualmente trabalho no **Grupo Gmill** e sou formado em Engenharia de Computação.
 
 Estou sempre aprendendo e aperfeiçoando minhas habilidades em soluções bem estruturadas, utilizando boas práticas de arquitetura, bancos de dados e serviços em nuvem.
 
@@ -12,6 +13,8 @@ Estou sempre aprendendo e aperfeiçoando minhas habilidades em soluções bem es
 </div>
 
 ## Backend
+
+Desenvolvimento de APIs REST e aplicações backend com .NET, C#, ASP.NET Core e Python.
 
 <div align="center">
   <img alt=".NET" height="40" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dotnetcore/dotnetcore-original.svg"/>
@@ -23,12 +26,16 @@ Estou sempre aprendendo e aperfeiçoando minhas habilidades em soluções bem es
 
 ## Banco de dados
 
+Utilização de PostgreSQL e SQL Server para persistência e consulta de dados.
+
 <div align="center">
   <img alt="PostgreSQL" height="40" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg"/>
   <img alt="SQL Server" height="40" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/microsoftsqlserver/microsoftsqlserver-original.svg"/>
 </div>
 
 ## Cloud, arquitetura e ferramentas
+
+Experiência com Azure, acompanhamento de pods em Kubernetes (K8s), Git, CQRS e MediatR.
 
 <div align="center">
   <img alt="Azure" height="40" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azure/azure-original.svg"/>
@@ -40,6 +47,8 @@ Estou sempre aprendendo e aperfeiçoando minhas habilidades em soluções bem es
 </div>
 
 ## Frontend
+
+Conhecimentos em JavaScript, HTML e CSS para construção e integração de interfaces.
 
 <div align="center">
   <img alt="JavaScript" height="40" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg"/>
@@ -54,3 +63,4 @@ Estou sempre aprendendo e aperfeiçoando minhas habilidades em soluções bem es
   <a href="mailto:jeandarochabraga@gmail.com"><img src="https://img.shields.io/badge/Gmail-333333?style=for-the-badge&logo=gmail&logoColor=white" alt="E-mail"/></a>
   <a href="https://www.linkedin.com/in/jeandarochabraga" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
 </div>
+```
