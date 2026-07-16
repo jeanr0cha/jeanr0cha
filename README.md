@@ -1,10 +1,10 @@
-# Olá, eu sou Jean Da Rocha Braga 👋
+# Me chamo Jean
 
 ## Desenvolvedor .NET | C# • ASP.NET Core • Azure
 
-Atuo com desenvolvimento backend, com foco em **.NET**, **C#** e **APIs REST**. Atualmente trabalho no **Grupo Gmill** e curso Engenharia de Computação.
+Atuo com desenvolvimento backend, em **.NET**, **C#** e **APIs REST**. Atualmente trabalho no **Grupo Gmill** e sou formado em Engenharia de Computação.
 
-Tenho interesse em construir soluções bem estruturadas, utilizando boas práticas de arquitetura, bancos de dados e serviços em nuvem.
+Estou sempre aprendendo e aperfeiçoando minhas habilidades em soluções bem estruturadas, utilizando boas práticas de arquitetura, bancos de dados e serviços em nuvem.
 
 <div align="center">
   <img height="180em" src="https://github-readme-stats.vercel.app/api?username=jeanr0cha&show_icons=true&hide=contribs,prs&cache_seconds=86400&theme=gotham" alt="Estatísticas do GitHub de Jean"/>
