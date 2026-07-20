@@ -6,12 +6,11 @@ Estou sempre aprendendo e aperfeiçoando minhas habilidades em soluções bem es
 
 ## Backend
 
-Desenvolvimento de APIs REST e aplicações backend com .NET, C#, ASP.NET Core e Python.
+Desenvolvimento de APIs REST e aplicações backend com .NET, C#, ASP.NET Core.
 
 <div align="center">
   <img alt=".NET" height="40" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/dotnetcore/dotnetcore-original.svg"/>
   <img alt="C#" height="40" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg"/>
-  <img alt="Python" height="40" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"/>
   <br/><br/>
   <img alt="ASP.NET Core" src="https://img.shields.io/badge/ASP.NET_Core-512BD4?style=for-the-badge&logo=dotnet&logoColor=white"/>
 </div>
