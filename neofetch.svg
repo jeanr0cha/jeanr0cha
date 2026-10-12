@@ -1,0 +1,131 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 490 480" width="100%" height="100%">
+  <defs>
+    <filter id="glow-green" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="0.6" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <pattern id="scanlines-neo" width="100" height="4" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="100" y2="0" stroke="rgba(0, 0, 0, 0.4)" stroke-width="1.2" />
+    </pattern>
+
+    <radialGradient id="vignette-neo" cx="50%" cy="50%" r="70%">
+      <stop offset="60%" stop-color="#000000" stop-opacity="0" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.75" />
+    </radialGradient>
+  </defs>
+
+  <style>
+    .terminal-bg { fill: #0b0f14; stroke: #1f2937; stroke-width: 1.5; }
+    .title-bar { fill: #111827; }
+    .title-text { fill: #9ca3af; font-family: 'Consolas', 'Fira Code', 'Courier New', monospace; font-size: 11px; font-weight: 600; }
+    .code-text { font-family: 'Consolas', 'Fira Code', 'Courier New', monospace; font-size: 12.5px; fill: #e5e7eb; }
+    .c-green { fill: #00ff66; font-weight: bold; }
+    .c-cyan { fill: #38bdf8; font-weight: bold; }
+    .c-yellow { fill: #facc15; font-weight: bold; }
+    .c-magenta { fill: #f472b6; font-weight: bold; }
+    .c-gray { fill: #6b7280; }
+    .c-white { fill: #f3f4f6; }
+    .cursor { fill: #00ff66; animation: blink 1s infinite; }
+    @keyframes blink { 0%, 50% { opacity: 1; } 51%, 100% { opacity: 0; } }
+  </style>
+
+  <!-- Terminal Window Background -->
+  <rect width="100%" height="100%" rx="10" class="terminal-bg"/>
+
+  <!-- Window Header -->
+  <rect width="100%" height="32" rx="10" class="title-bar"/>
+  <rect y="22" width="100%" height="10" class="title-bar"/>
+  <line x1="0" y1="32" x2="490" y2="32" stroke="#1f2937" stroke-width="1"/>
+
+  <!-- Window Buttons -->
+  <circle cx="18" cy="16" r="4.5" fill="#ff5f56"/>
+  <circle cx="32" cy="16" r="4.5" fill="#ffbd2e"/>
+  <circle cx="46" cy="16" r="4.5" fill="#27c93f"/>
+  <text x="245" y="20" class="title-text" text-anchor="middle">jeanr0cha@espirito-santo: ~ (neofetch)</text>
+
+  <!-- Neofetch Content -->
+  <g transform="translate(24, 52)" class="code-text">
+    <!-- Prompt Command -->
+    <text y="0">
+      <tspan class="c-green">jeanr0cha@espirito-santo</tspan><tspan class="c-gray"> ~ $ </tspan><tspan class="c-white">neofetch</tspan>
+    </text>
+
+    <!-- User Header -->
+    <text y="24">
+      <tspan class="c-green" filter="url(#glow-green)">jeanr0cha</tspan><tspan class="c-gray">@</tspan><tspan class="c-cyan">backend-core</tspan>
+    </text>
+    <text y="36" class="c-gray">------------------------------------</text>
+
+    <!-- Specs List -->
+    <text y="60">
+      <tspan class="c-cyan">OS: </tspan><tspan class="c-white">Windows 11 / Linux x86_64</tspan>
+    </text>
+    <text y="82">
+      <tspan class="c-cyan">Host: </tspan><tspan class="c-white">Workstation (Espirito Santo, BR)</tspan>
+    </text>
+    <text y="104">
+      <tspan class="c-cyan">Role: </tspan><tspan class="c-white">Desenvolvedor BackEnd .NET</tspan>
+    </text>
+    <text y="126">
+      <tspan class="c-cyan">Company: </tspan><tspan class="c-white">Grupo Gmill - Millenium Comercial</tspan>
+    </text>
+    <text y="148">
+      <tspan class="c-cyan">Education: </tspan><tspan class="c-white">Engenharia de Computação</tspan>
+    </text>
+    <text y="170">
+      <tspan class="c-cyan">Uptime: </tspan><tspan class="c-white">Building Scalable APIs &amp; Services</tspan>
+    </text>
+    <text y="192">
+      <tspan class="c-cyan">Core Stack: </tspan><tspan class="c-green">C# .NET, ASP.NET Core, REST APIs</tspan>
+    </text>
+    <text y="214">
+      <tspan class="c-cyan">Databases: </tspan><tspan class="c-yellow">PostgreSQL, SQL Server</tspan>
+    </text>
+    <text y="236">
+      <tspan class="c-cyan">Cloud &amp; Ops: </tspan><tspan class="c-magenta">Azure, Docker, Git / GitHub</tspan>
+    </text>
+    <text y="258">
+      <tspan class="c-cyan">Shell: </tspan><tspan class="c-white">PowerShell 7 / Bash</tspan>
+    </text>
+    <text y="280">
+      <tspan class="c-cyan">Terminal: </tspan><tspan class="c-white">Windows Terminal (Matrix Theme)</tspan>
+    </text>
+    <text y="302">
+      <tspan class="c-cyan">LinkedIn: </tspan><tspan class="c-green">/in/jeandarochabraga</tspan>
+    </text>
+
+    <!-- Bash prompt with blinking cursor -->
+    <text y="336">
+      <tspan class="c-green">jeanr0cha@espirito-santo</tspan><tspan class="c-gray"> ~ $ </tspan><tspan class="cursor">█</tspan>
+    </text>
+
+    <!-- Color Palette Blocks -->
+    <g transform="translate(0, 360)">
+      <rect x="0" width="20" height="14" rx="3" fill="#111827"/>
+      <rect x="25" width="20" height="14" rx="3" fill="#ef4444"/>
+      <rect x="50" width="20" height="14" rx="3" fill="#22c55e"/>
+      <rect x="75" width="20" height="14" rx="3" fill="#eab308"/>
+      <rect x="100" width="20" height="14" rx="3" fill="#3b82f6"/>
+      <rect x="125" width="20" height="14" rx="3" fill="#a855f7"/>
+      <rect x="150" width="20" height="14" rx="3" fill="#06b6d4"/>
+      <rect x="175" width="20" height="14" rx="3" fill="#f3f4f6"/>
+
+      <rect x="0" y="18" width="20" height="14" rx="3" fill="#374151"/>
+      <rect x="25" y="18" width="20" height="14" rx="3" fill="#f87171"/>
+      <rect x="50" y="18" width="20" height="14" rx="3" fill="#4ade80"/>
+      <rect x="75" y="18" width="20" height="14" rx="3" fill="#fde047"/>
+      <rect x="100" y="18" width="20" height="14" rx="3" fill="#60a5fa"/>
+      <rect x="125" y="18" width="20" height="14" rx="3" fill="#c084fc"/>
+      <rect x="150" y="18" width="20" height="14" rx="3" fill="#22d3ee"/>
+      <rect x="175" y="18" width="20" height="14" rx="3" fill="#ffffff"/>
+    </g>
+  </g>
+
+  <!-- CRT Scanlines & Vignette -->
+  <rect y="32" width="100%" height="448" fill="url(#scanlines-neo)" pointer-events="none" />
+  <rect width="100%" height="100%" rx="10" fill="url(#vignette-neo)" pointer-events="none" />
+</svg>

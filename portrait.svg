@@ -1,0 +1,94 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 490 480" width="100%" height="100%">
+  <defs>
+    <!-- Matrix Glow Filter -->
+    <filter id="glow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="0.9" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+
+    <!-- Scanline Overlay -->
+    <pattern id="scanlines" width="100" height="4" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="100" y2="0" stroke="rgba(0, 0, 0, 0.4)" stroke-width="1.2" />
+    </pattern>
+
+    <!-- CRT Corner Vignette -->
+    <radialGradient id="vignette" cx="50%" cy="50%" r="70%">
+      <stop offset="60%" stop-color="#000000" stop-opacity="0" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.75" />
+    </radialGradient>
+  </defs>
+
+  <style>
+    .terminal-bg { fill: #0b0f14; stroke: #1f2937; stroke-width: 1.5; }
+    .title-bar { fill: #111827; }
+    .title-text { fill: #9ca3af; font-family: 'Consolas', 'Fira Code', 'Courier New', monospace; font-size: 11px; font-weight: 600; }
+    .ascii-text { font-family: 'Consolas', 'Fira Code', 'Courier New', monospace; font-size: 9.6px; fill: #00ff66; font-weight: bold; letter-spacing: 1.2px; }
+    .scan-beam { stroke: #00ff66; stroke-width: 1.5; opacity: 0.35; filter: url(#glow); }
+  </style>
+
+  <!-- Terminal Window Background -->
+  <rect width="100%" height="100%" rx="10" class="terminal-bg"/>
+
+  <!-- Window Header -->
+  <rect width="100%" height="32" rx="10" class="title-bar"/>
+  <rect y="22" width="100%" height="10" class="title-bar"/>
+  <line x1="0" y1="32" x2="490" y2="32" stroke="#1f2937" stroke-width="1"/>
+
+  <!-- Window Buttons -->
+  <circle cx="18" cy="16" r="4.5" fill="#ff5f56"/>
+  <circle cx="32" cy="16" r="4.5" fill="#ffbd2e"/>
+  <circle cx="46" cy="16" r="4.5" fill="#27c93f"/>
+  <text x="245" y="20" class="title-text" text-anchor="middle">jeanr0cha@terminal: ~ (avatar.ascii)</text>
+
+  <!-- ASCII Art Body -->
+  <g transform="translate(0, 30)">
+    <text class="ascii-text" filter="url(#glow)" xml:space="preserve">
+      <tspan x="18" y="24">                                                            </tspan>
+      <tspan x="18" y="37">                                                            </tspan>
+      <tspan x="18" y="50">                                                            </tspan>
+      <tspan x="18" y="63">                                                            </tspan>
+      <tspan x="18" y="76">                                                            </tspan>
+      <tspan x="18" y="89">                         C}|^    &gt;L7)_                      </tspan>
+      <tspan x="18" y="102">                       z5E6q511{r+ly5e*                     </tspan>
+      <tspan x="18" y="115">                      rx]xZtf3Zjoti(F{f                     </tspan>
+      <tspan x="18" y="128">                      [EZffLs/}E5T;cJ7u,                    </tspan>
+      <tspan x="18" y="141">                  *17 owSolTFiZkyIc!(}ott=                  </tspan>
+      <tspan x="18" y="154">                  }d[fZ2khq]YxqqEjZo5Y[eY.                  </tspan>
+      <tspan x="18" y="167">                  ^x{55xw9hwnCnoe33exYlf&lt;                   </tspan>
+      <tspan x="18" y="180">                    eY|IYEwSuicr! +FnoC                     </tspan>
+      <tspan x="18" y="193">                     &gt;)rF3YC=?|{|Lc v{.                     </tspan>
+      <tspan x="18" y="206">                     &gt;xz &gt;)!?ZuvrF1c                        </tspan>
+      <tspan x="18" y="219">                     |5n&gt;    TC*'?:                         </tspan>
+      <tspan x="18" y="232">                     =7YZT                                  </tspan>
+      <tspan x="18" y="245">                       -7}CL+&lt;++&gt;*{/                        </tspan>
+      <tspan x="18" y="258">                          &gt;73noetluL                        </tspan>
+      <tspan x="18" y="271">                             -*|l17                         </tspan>
+      <tspan x="18" y="284">                                                            </tspan>
+      <tspan x="18" y="297">       `                                                    </tspan>
+      <tspan x="18" y="310">       `                                                    </tspan>
+      <tspan x="18" y="323">       `                                                    </tspan>
+      <tspan x="18" y="336">       -                                                    </tspan>
+      <tspan x="18" y="349">                                                            </tspan>
+      <tspan x="18" y="362">                        }IT,                         z|z`   </tspan>
+      <tspan x="18" y="375">                 =T}uZ5j2ooSo&lt;                    &lt;ixE2YYL  </tspan>
+      <tspan x="18" y="388">              zt2h4hkwoeEjunY2F                  Cx2ayjjyx} </tspan>
+      <tspan x="18" y="401">             oPP66h6w]atuyn}xxZ3               Tnjyyaaaj5xj|</tspan>
+      <tspan x="18" y="414">             &gt;nE2EwkkwE]x5ei[[lZu:          !(nYxjja]]aYel15</tspan>
+      <tspan x="18" y="427">               so2Sq699hhPqSyx5nZ5[1})/*T{lZxyaa22]2a5ellt1T</tspan>
+
+    </text>
+  </g>
+
+  <!-- Animated Laser Scanning Beam (SMIL) -->
+  <line x1="0" y1="32" x2="490" y2="32" class="scan-beam">
+    <animate attributeName="y1" values="32;480;32" dur="5s" repeatCount="indefinite" />
+    <animate attributeName="y2" values="32;480;32" dur="5s" repeatCount="indefinite" />
+  </line>
+
+  <!-- CRT Scanlines & Vignette -->
+  <rect y="32" width="100%" height="448" fill="url(#scanlines)" pointer-events="none" />
+  <rect width="100%" height="100%" rx="10" fill="url(#vignette)" pointer-events="none" />
+</svg>
