@@ -1,15 +1,6 @@
 ﻿<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 490 480" width="100%" height="100%">
   <defs>
-    <!-- Matrix Glow Filter -->
-    <filter id="glow" x="-10%" y="-10%" width="120%" height="120%">
-      <feGaussianBlur stdDeviation="0.9" result="blur" />
-      <feMerge>
-        <feMergeNode in="blur" />
-        <feMergeNode in="SourceGraphic" />
-      </feMerge>
-    </filter>
-
-    <!-- Scanline Overlay -->
+    <!-- Monochrome CRT Scanlines -->
     <pattern id="scanlines" width="100" height="4" patternUnits="userSpaceOnUse">
       <line x1="0" y1="0" x2="100" y2="0" stroke="rgba(0, 0, 0, 0.4)" stroke-width="1.2" />
     </pattern>
@@ -25,8 +16,9 @@
     .terminal-bg { fill: #0b0f14; stroke: #1f2937; stroke-width: 1.5; }
     .title-bar { fill: #111827; }
     .title-text { fill: #9ca3af; font-family: 'Consolas', 'Fira Code', 'Courier New', monospace; font-size: 11px; font-weight: 600; }
-    .ascii-text { font-family: 'Consolas', 'Fira Code', 'Courier New', monospace; font-size: 9.6px; fill: #00ff66; font-weight: bold; letter-spacing: 1.2px; }
-    .scan-beam { stroke: #00ff66; stroke-width: 1.5; opacity: 0.35; filter: url(#glow); }
+    /* Pure White / Silver ASCII text matching the video */
+    .ascii-text { font-family: 'Consolas', 'Fira Code', 'Courier New', monospace; font-size: 7.2px; fill: #f0f6fc; font-weight: 600; letter-spacing: 0.8px; }
+    .scan-beam { stroke: #f0f6fc; stroke-width: 1.2; opacity: 0.25; }
   </style>
 
   <!-- Terminal Window Background -->
@@ -43,46 +35,62 @@
   <circle cx="46" cy="16" r="4.5" fill="#27c93f"/>
   <text x="245" y="20" class="title-text" text-anchor="middle">jeanr0cha@terminal: ~ (avatar.ascii)</text>
 
-  <!-- ASCII Art Body -->
+  <!-- High-Density Monochrome ASCII Art Body -->
   <g transform="translate(0, 30)">
-    <text class="ascii-text" filter="url(#glow)" xml:space="preserve">
-      <tspan x="18" y="24">                                                            </tspan>
-      <tspan x="18" y="37">                                                            </tspan>
-      <tspan x="18" y="50">                                                            </tspan>
-      <tspan x="18" y="63">                                                            </tspan>
-      <tspan x="18" y="76">                                                            </tspan>
-      <tspan x="18" y="89">                         C}|^    &gt;L7)_                      </tspan>
-      <tspan x="18" y="102">                       z5E6q511{r+ly5e*                     </tspan>
-      <tspan x="18" y="115">                      rx]xZtf3Zjoti(F{f                     </tspan>
-      <tspan x="18" y="128">                      [EZffLs/}E5T;cJ7u,                    </tspan>
-      <tspan x="18" y="141">                  *17 owSolTFiZkyIc!(}ott=                  </tspan>
-      <tspan x="18" y="154">                  }d[fZ2khq]YxqqEjZo5Y[eY.                  </tspan>
-      <tspan x="18" y="167">                  ^x{55xw9hwnCnoe33exYlf&lt;                   </tspan>
-      <tspan x="18" y="180">                    eY|IYEwSuicr! +FnoC                     </tspan>
-      <tspan x="18" y="193">                     &gt;)rF3YC=?|{|Lc v{.                     </tspan>
-      <tspan x="18" y="206">                     &gt;xz &gt;)!?ZuvrF1c                        </tspan>
-      <tspan x="18" y="219">                     |5n&gt;    TC*'?:                         </tspan>
-      <tspan x="18" y="232">                     =7YZT                                  </tspan>
-      <tspan x="18" y="245">                       -7}CL+&lt;++&gt;*{/                        </tspan>
-      <tspan x="18" y="258">                          &gt;73noetluL                        </tspan>
-      <tspan x="18" y="271">                             -*|l17                         </tspan>
-      <tspan x="18" y="284">                                                            </tspan>
-      <tspan x="18" y="297">       `                                                    </tspan>
-      <tspan x="18" y="310">       `                                                    </tspan>
-      <tspan x="18" y="323">       `                                                    </tspan>
-      <tspan x="18" y="336">       -                                                    </tspan>
-      <tspan x="18" y="349">                                                            </tspan>
-      <tspan x="18" y="362">                        }IT,                         z|z`   </tspan>
-      <tspan x="18" y="375">                 =T}uZ5j2ooSo&lt;                    &lt;ixE2YYL  </tspan>
-      <tspan x="18" y="388">              zt2h4hkwoeEjunY2F                  Cx2ayjjyx} </tspan>
-      <tspan x="18" y="401">             oPP66h6w]atuyn}xxZ3               Tnjyyaaaj5xj|</tspan>
-      <tspan x="18" y="414">             &gt;nE2EwkkwE]x5ei[[lZu:          !(nYxjja]]aYel15</tspan>
-      <tspan x="18" y="427">               so2Sq699hhPqSyx5nZ5[1})/*T{lZxyaa22]2a5ellt1T</tspan>
+    <text class="ascii-text" xml:space="preserve">
+      <tspan x="14" y="16.0">                                                                                            </tspan>
+      <tspan x="14" y="24.8">                                   `:-                                                      </tspan>
+      <tspan x="14" y="33.6">                                 '         `                                                </tspan>
+      <tspan x="14" y="42.4">                                                                                            </tspan>
+      <tspan x="14" y="51.2">                                                                                            </tspan>
+      <tspan x="14" y="60.0">                                     `!?LczL+    .!sL()+-                                   </tspan>
+      <tspan x="14" y="68.8">                                    s6DUGPaI? ^=_v[ad4VdPur                                 </tspan>
+      <tspan x="14" y="77.6">                                  /n#@@@@@#yn}]a1(|IZkR@@@Xf                                </tspan>
+      <tspan x="14" y="86.4">                                 7h@@@HDB&amp;@@@@@@027fq#K4O0@Wf    `                          </tspan>
+      <tspan x="14" y="95.2">                                LP@@BE5a9PE4K$BgMNMbbw44Pyy@H=                              </tspan>
+      <tspan x="14" y="104.0">                               -x@@pokpADB&amp;@@B4lkPhowApSonuP@I                              </tspan>
+      <tspan x="14" y="112.8">                               /M@Ulj2yYYYf/TZGkyj6OjF(I7v1u@h&lt;^                            </tspan>
+      <tspan x="14" y="121.6">                         -F]wZJi@@ajwEu|a]Fax[$U2kpV?f{e|Tjx@gNKf.                          </tspan>
+      <tspan x="14" y="130.4">                         {A@@@@6@@Yy9p9jqSlxekN42Pp$ktI255wudg@@KL                          </tspan>
+      <tspan x="14" y="139.2">                        =wm@@@@8RByaYhm#B@WGbWHYx22OM%NH46j1}]EQg)                          </tspan>
+      <tspan x="14" y="148.0">                        =Eg@G@VybEy]aEhpp9PESA625yxZeIeja5[jtED@d=                          </tspan>
+      <tspan x="14" y="156.8">                         7B@Mmx$fZyqwqw2SydUe9K$MgMmwo55neZwuO@ML                           </tspan>
+      <tspan x="14" y="165.6">                          i@@VRPwkkd4PPS]y4h{jHDNgMDDVSaee5Vp&amp;H)                            </tspan>
+      <tspan x="14" y="174.4">                           LA@@@XPOGpOOhwU&amp;BUq{+rT(:3p&amp;%howg#yc                             </tspan>
+      <tspan x="14" y="183.2">                            -o&amp;&amp;5I{4AXXAA@%ozCq9wSkP]7;P8OgNj'                              </tspan>
+      <tspan x="14" y="192.0">                              `b%Xy}ppUmKDzh#G5uyj}fEAp&lt;VB8j&lt;                               </tspan>
+      <tspan x="14" y="200.8">                              &lt;B@SNPzEhHR6)XhC[jYtutCOHZ]2F-                                </tspan>
+      <tspan x="14" y="209.6">                             caN8ep@9!7]ka5X&amp;8h4j*5kRgSi/_                                  </tspan>
+      <tspan x="14" y="218.4">                         -;+&lt;7w6d93H@0x! ,?ZR@@%Vy9RUC                                      </tspan>
+      <tspan x="14" y="227.2">                      _+/Lz&lt;-*5UW@@]q$%8]i&lt; .*)T!-. !5a7                                    </tspan>
+      <tspan x="14" y="236.0">                  _!sv)Tc,cc=:;Lub@@Ww[4XbdhpbAAUGA#@WHn                                    </tspan>
+      <tspan x="14" y="244.8">               _+sJ7L&lt;_&gt;r+_      _Cb%Q$qiPRW@@@@%0Bmd5RE-                                   </tspan>
+      <tspan x="14" y="253.6">             ,++&lt;,!s)Tz+_--        ,)o6R%MUEuf[5xZeu35Bw^          .-  ``                   </tspan>
+      <tspan x="14" y="262.4">           ^+&gt;' '^^,_-.`.            -r(o40@@@&amp;DSCCfaDBu,            '    `-                </tspan>
+      <tspan x="14" y="271.2">         ^cr,   `',,:-                   -+}EUM@@@@@@Wx,,  .       .    -  `=,              </tspan>
+      <tspan x="14" y="280.0">        +s+-    ``.`.-'.                     -?}]KRGj)`-^`  -        ``    : ^&lt;'            </tspan>
+      <tspan x="14" y="288.8">       rv&lt;''           `                        `,:  -. '' `:              .,_-&gt;.           </tspan>
+      <tspan x="14" y="297.6">      ^(r^:-  ..-''-`     .`       ' `      ` ;:     -   _ ,`_  .            ,^'_           </tspan>
+      <tspan x="14" y="306.4">      c(_='-.                       '        ::,&gt;  `:,:  &lt; , '.               '. ;-         </tspan>
+      <tspan x="14" y="315.2">      /7,^-.-`                      -       `  = r&lt;  =&gt;  +^`' `                 ''&lt;`        </tspan>
+      <tspan x="14" y="324.0">      c7:;'.-        .-.`   ``               :  ^^rL- +&gt;_&lt;! _          :        -':=        </tspan>
+      <tspan x="14" y="332.8">      +(^;,'.                      .          :, _/:s: rc&lt;* `.         _.        - _,       </tspan>
+      <tspan x="14" y="341.6">      _7/^,:-                           .-     .=  c^&gt;-&lt;&lt;!^  `         :=         .-+:      </tspan>
+      <tspan x="14" y="350.4">       /v&lt;'_:`    ..               !tyZ{, -      ^^ ''_ic&lt;'           ``+.        _=,T*.    </tspan>
+      <tspan x="14" y="359.2">       _cc+-:'.`      `      `=cT(Fb@@@@@bec      :&gt;  z(F! `          ` &lt;_       !l40@@NVl&gt; </tspan>
+      <tspan x="14" y="368.0">        _^*z,-:----':-.._/{YhHN@@@@@@VdX@@@@a=     -&gt; +(Tc              ==   =)ud@@@@@@@@@G </tspan>
+      <tspan x="14" y="376.8">        . `rL&lt;`-    :*36B@@@@@@@@@Q&amp;OEx(jqN@@Wf     '; /!;              .+` JhQ@@@@9noZo9@@ </tspan>
+      <tspan x="14" y="385.6">          - ^sr`:-+lU@@@@@@@gV]n]kEXESwnxd2ng@@j     ,_ :              .=+ }8@@QKytl1lZyxE%J</tspan>
+      <tspan x="14" y="394.4">         ` ` -/?^iR@@@@WbS5xjx5oxkf6Vt5y{tn[l9@@V*    ^               ,&gt; s4@@%Vju3tueo[t[ulI</tspan>
+      <tspan x="14" y="403.2">              `/LG@@pxEqw2jYjyyYZE43]wa22yh]ZjuQ@Q3 `_ _              ^fb@@@mEeltt1tllunlIe1</tspan>
+      <tspan x="14" y="412.0">                ^X@@#2j]ESS2j5jyx5kVyC33y)PVP[[3b@@a&gt;  :-        =?f]A@@@@Oantttlttt1lnZo5S3</tspan>
+      <tspan x="14" y="420.8">              '. zp@@@pxZZZ55e5]wqkdUKAA##9tt1}llo@@@Mmb4E[CC1ZqG$@@@@@%Vy555onneoon[Zy]YZn7</tspan>
+      <tspan x="14" y="429.6">                     +F3tlu[[eoZZZooeen[lll3I}{F|iC}{i|JTz!;^;rzv7F{CC}I3Itlllttlult3}i(((7|</tspan>
 
     </text>
   </g>
 
-  <!-- Animated Laser Scanning Beam (SMIL) -->
+  <!-- Animated Laser Scanning Beam -->
   <line x1="0" y1="32" x2="490" y2="32" class="scan-beam">
     <animate attributeName="y1" values="32;480;32" dur="5s" repeatCount="indefinite" />
     <animate attributeName="y2" values="32;480;32" dur="5s" repeatCount="indefinite" />
